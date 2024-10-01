@@ -271,7 +271,7 @@ for (key in mixedObject) {
   type = typeof mixedObject[key];
   if ((type === 'string')) {
     console.log(key + ":" + mixedObject[key]);
-    i=i+1
+    i=i+1 // Əgər heç string olmasa i=0 olur və "no such value"-i consola çıxarır.
     continue
   }else if(i=0) {
     console.log("no such value");
@@ -329,16 +329,3 @@ for (key in mixedObject) {
         console.log("no such value");
     }
   }
-console.log(" ");
-
-i=0
-for (key in mixedObject) {
-    type = typeof mixedObject[key];
-    if ((type === '')) {
-      console.log(key + ":" + mixedObject[key]);
-      i=i+1
-    }else if(i=0){
-        console.log("no such value");
-    }
-  }
-console.log(" ");
